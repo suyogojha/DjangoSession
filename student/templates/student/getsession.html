@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- for  first and second view -->
+<!--     
+    get sesssion <hr>
+    {{name}} <br> <hr>
+
+    {% for key in keys %}
+    {{key}} <br>
+    {% endfor %} <hr>
+
+    {% for item in items %}
+    {{item}} <br>
+    {% endfor %} <hr>
+
+    {% for key, value in items %}
+    {{item}} {{value}} <br>
+    {% endfor %} <hr>
+    {{age}} -->
+
+    {{name}} <br>
+    {{request.session.get_session_cookie_age}} <br>
+    {{request.session.get_expiry_age}} <br>
+    {{request.session.get_expiry_date}} <br>
+    {{request.session.get_expire_at_browser_close}} <br>
+
+</body>
+</html>
